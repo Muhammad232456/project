@@ -1,0 +1,161 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    display: grid;
+    font-family: Karla, sans-serif;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(, 1fr);
+    width: 85%;
+    margin: auto;
+    box-shadow: 2px 5px 10px 1px rgb(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.join-community,
+.subscription,
+.why-us {
+    padding: 2rem;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    line-height: 1.6;
+    font-size: 1.4em;
+
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+    line-height: 1.5;
+    font-size: 1em;
+    margin: 1rem 0, 1rem, 0;
+}
+
+.join-community {
+    background-color: white;
+    grid-row: 1 / span 1;
+    border-radius: 12px 12px 0 0;
+    color: hsl(218, 22%, 67%);
+}
+
+.join-community p {
+    margin: 0.5rem;
+    max-width: 180ch;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+}
+
+.subscription {
+    color: white;
+    background-color: hsl(179, 62%, 38%);
+    grid-row: 2 / span1;
+}
+
+.cost {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    padding-right: 0.5rem;
+
+}
+
+.sign-up {
+    display: block;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0 0.5rem;
+    padding: 1rem;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    transition: transform .3;
+}
+
+.sign-up:hover {
+    transform: scale(1.1);
+}
+
+.why-us {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    grid-row: 3 / span 1;
+    border-radius: 0 0 10px 10px;
+}
+
+.why-us li {
+    list-style-type: none;
+    color: hsl(204, 43%, 93%);
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+}
+
+
+
+footer,
+.attribution a {
+    color: hsl(218, 22%, 67%);
+    display: inline-grid;
+
+
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .project {
+        grid-template-columns: 1fr 1fr;
+        width: 60%;
+    }
+
+
+    .join-community,
+    .subscription,
+    .why-us {
+        padding: 2.5rem;
+    }
+
+    .join-community {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 2;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .subscription {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+        border-radius: 0 0 0px 15px;
+    }
+
+    .why-us {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+        border-radius: 0 0 15px 0;
+    }
+
+
+}
